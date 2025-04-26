@@ -2,6 +2,8 @@ import "../css/Upload.css";
 import { useState } from "react";
 import axios from "axios";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
 const Upload = () => {
   const [file, setFile] = useState(null);
   const [dragActive, setDragActive] = useState(false);
@@ -52,7 +54,7 @@ const Upload = () => {
     setIsUploaded(false); // Reset uploaded state
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000",
+      const response = await axios.post(`${API_BASE_URL}/`,
         formData,
         {
           headers: {
