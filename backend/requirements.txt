@@ -1,5 +1,6 @@
 bcrypt==4.0.1
-cryptography
+cryptography>=3.0
+pyopenssl
 fastapi
 psycopg2-binary
 PyMySQL
@@ -18,4 +19,4 @@ gtts
 moviepy
 aiofiles
 aspose.slides
-pyopenssl
+
