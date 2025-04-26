@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # React frontend
+    allow_origins=["https://teach-mate-web-app.vercel.app/"],  # React frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
