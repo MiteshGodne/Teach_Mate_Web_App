@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React frontend
+    allow_origins=["https://teach-mate-web-app.vercel.app/", "https://teach-mate-web-app.vercel.app/upload"],  # React frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
