@@ -18,3 +18,4 @@ gtts
 moviepy
 aiofiles
 aspose.slides
+pyopenssl
